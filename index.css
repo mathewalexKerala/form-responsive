@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section{
+    display: flex;
+    gap: 30px;
+
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+
+}
+.left-side>form >button{
+    background-color: black;
+    color: whitesmoke;
+    height: 40px;
+    border-radius: 10px;
+    width: 270px;
+}
+.left-side >form input{
+    border: 3px solid black;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 240px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 12px;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-side .progress{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-side h4{
+    margin-top: 5px;
+    margin-left: 15%;
+}
+.right-side .box{
+    background-color: rgba(202, 204, 205, 0.826);
+    width: 230px;
+    height: 280px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  
+}
+.right-side .progress:hover{
+    border: 3px solid rgb(211, 189, 19);
+    outline: none;
+}
+.left-side >form input:focus{
+    border: 3px solid rgb(211, 189, 19);
+    outline: none;
+}
+label{
+    font-size: 20px;
+    font-weight: 1000;
+}
+button{
+    margin-top: 30px;
+}
+.left-side >form button:focus{
+    background-color: rgb(26, 43, 230);
+}
+@media  screen and (max-width:565px) {
+    section{
+        display: block;
+    }
+    .right-side{
+        margin-top: 40px;
+    }
+    .left-side >form input{
+       width: 100%
+    }
+    
+}
